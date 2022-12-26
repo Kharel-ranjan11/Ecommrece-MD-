@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="shortcut icon" href="./assest/image/fav.png" type="image/x-icon">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+ 
+  <body>
+    <div>
+      <div id="header">
+        <header
+          id="social_icon"
+          class="d-flex justify-content-around p-2 container-fluid"
+        >
+          <div class="ms-2">
+            <span>
+              <a href="#">
+                <span
+                  style="
+                    --hr: rgba(243, 243, 243, 0.581);
+                    --border-color: transparent;
+                  "
+                  >FAQs</span
+                ></a
+              >
+            </span>
+            <span>
+              <a href="#">
+                <span
+                  style="
+                    --hr: rgba(243, 243, 243, 0.581);
+                    --border-color: rgb(175, 175, 193);
+                  "
+                  >Help</span
+                ></a
+              >
+            </span>
+            <span>
+              <a href="#"
+                ><span
+                  style="
+                    --hr: rgba(243, 243, 243, 0.581);
+                    --border-color: rgb(175, 175, 193);
+                  "
+                  >Support</span
+                ></a
+              >
+            </span>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"> <i class="fab fa-linkedin"></i></a>
+          </div>
+        </header>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img
+              src="./assest/image/fav.png"
+              height="50"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navBar_ul">
+              <li class="nav-item">
+                <a
+                  class="nav-link "
+                  aria-current="page"
+                  href="index.html"
+                  style="--hr: underline"
+                  >Home</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="--hr: underline"
+                  >Shop
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link  dropdown-toggle""
+                  aria-current="page"
+                  href="#"
+                  style="--hr: underline"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="product.html">Shop Details</a></li>
+                  <li><a class="dropdown-item" href="cart.html">Shopping Cart</a></li>
+                  <li><a class="dropdown-item" href="checkout.html">Check Out</a></li>
+ </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link "
+                  aria-current="page"
+                  href="contact.html"
+                  style="--hr: underline"
+                  >Contact</a
+                >
+              </li>
+
+              <li
+                class="nav-item d-flex align-items-center justify-content-start container-fluid"
+              >
+                <div class="d-flex justify-content-around align-items-center">
+               <form action="">
+                <div class="input-group">
+                  <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">Search</label>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+               </form>
+                  <div class="p-2" id="right_icon">
+                    <span class="">
+                     <i class="fas fa-shopping-cart"></i>
+                     <code>07</code>
+                    </span>
+                    <span class="">
+                      <i class="fas fa-bell"></i>  <code>10</code>
+                    </span>
+                   </div>
+                </div>
+               
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      
+      <main>
+        <!-- filter and products -->
+        <section class="container-fluid pt-4 pb-5" >
+          <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+              <!-- for filter  -->
+              <div class="col  ">
+                <div class="accordion accordion-border" id="accordionFlushExampleX">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOneX">
+                      <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
+                    <h5 class="fw-lighter">Gender</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOneX" class="accordion-collapse collapse show"
+                      aria-labelledby="flush-headingOneX" data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body">
+                      <div>
+                        <!-- Default radio -->
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+  <label class="form-check-label" for="flexRadioDefault1"> Men</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+  <label class="form-check-label text-dark" for="flexRadioDefault2"> Women</label>
+</div>
+
+<!-- Default checked radio -->
+
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwoX">
+                      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseTwoX" aria-expanded="false" aria-controls="flush-collapseTwoX">
+                        <h5 class="fw-lighter">Price</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwoX" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoX"
+                      data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body">
+                       <div class="p-5">
+<div class="range">
+  <input type="range" class="form-range" id="customRange1" min="100" max="5000" />
+</div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThreeX">
+                      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseThreeX" aria-expanded="false" aria-controls="flush-collapseThreeX">
+                        <h5 class="fw-lighter">Sizes</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThreeX" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeX"
+                      data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body">
+                       <div>
+                        <div class="list-group list-group-light">
+                          <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxExample11" checked />
+    <label class="form-check-label" for="checkboxExample11">ALL</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxExample1" />
+    <label class="form-check-label" for="checkboxExample1">X</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxExample2" />
+    <label class="form-check-label" for="checkboxExample2">XL</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" value="" id="checkboxExample3" />
+    <label class="form-check-label" for="checkboxExample3">XXL</label>
+  </li>
+  
+</div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFourX">
+                      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseFourX" aria-expanded="false" aria-controls="flush-collapseFourX">
+                        <h5 class="fw-lighter">Colors</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFourX" class="accordion-collapse collapse" aria-labelledby="flush-headingFourX"
+                      data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body">
+                       <div>
+                        <ul class="list-group list-group-light">
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."  checked/>
+                         All
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                           Red
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                            Green
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                            Blue
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                          Pink
+                          </li>
+                         
+                        </ul>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFiveX">
+                      <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#flush-collapseFiveX" aria-expanded="false" aria-controls="flush-collapseFiveX">
+                        <h5 class="fw-lighter">Products</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFiveX" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveX"
+                      data-mdb-parent="#accordionFlushExampleX">
+                      <div class="accordion-body">
+                       <div>
+                        <ul class="list-group list-group-light">
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." checked />
+                           ALL
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                           Bag
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                            Sweater
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                          Sunglass
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+                          Pant
+                          </li>
+                         
+                        </ul>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  End for filter  -->
+<!-- for Products -->
+              <div class="col  ">
+                <div class="container-fluid">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                    <div class="col  "><nav class="nav d-flex justify-content-start align-items-center m-auto">
+                      <a class=" p-2 text-dark fs-5" href="#" aria-current="page">All</a>
+                      <a class=" p-2 text-dark fs-5" href="#">Men's</a>
+                      <a class=" p-2 text-dark fs-5" href="#">Women's</a>
+                    </nav></div>
+                    <div class="col  "><div class="mb-3">
+                      <select class="form-select form-select-lg" name="sort" id="sort">
+                        <option selected>Sort</option>
+                        <option value="A-Z">A-Z</option>
+                        <option value="Z-A">Z-A</option>
+                        <option value="Price(A)">Price(Asc)</option>
+                        <option value="Price(D)">Price(Des)</option>
+                      </select>
+                    </div>
+                  </div>
+                    
+                  </div>
+                </div>
+                <!-- for card -->
+                <div class="container-fluid p-4">
+                  <div class="row row-cols-1  row-cols-lg-2 row-cols-md-1 g-4">
+                    <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_01.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_02.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                              
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_03.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_04.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_05.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_06.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_07.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_08.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                             
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="product.html" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col">
+                      <div class="card h-100 ">
+                        <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
+                          <img src="./assest/image/shop_09.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: rgba(171, 210, 222, 0.2); display: grid; justify-content: center;place-content: center; backdrop-filter: blur(4px);">
+                              <div class="d-grid " >
+                              
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;"><i class="fas fa-eye " style="font-size: 20px;"></i></span></a>
+                              <a href="#" class="nav-link m-2"><span style="padding: 10px; background-color: green;color: white;font-size: 20px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><i class="fas fa-cart-plus"></i></span></a>
+                            </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title fw-lighter" style="line-height: 12px; margin-left: -1rem;"> <p>Oupidata non</p>
+                          <span >M/L/X/XL</span></h5>
+                          <p class="card-text">
+                            <ul class="d-grid container-fluid">
+                              <div class="d-flex justify-content-center">
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                                <li><i style="color: rgb(225, 225, 81);" class="fas fa-star-half-alt"></i></li>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <span class="fw-lighter">Rs23.00</span>
+                              </div>
+                            </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                   
+                  </div>
+                </div>
+                <!--end for card -->
+              </div> 
+<!--  End for Products -->
+
+            </div>
+          </div>
+        </section>
+        <!--  End  filter and products -->
+
+        <!-- for Brand -->
+        <section class="pt-3 pb-5" style="background-color: #dbcad2;">
+          <div class="container-fluid text-center">
+            <div>
+              <h1 class="text-dark fw-lighter">Our Brands</h1>
+            
+            </div>
+            <div
+              class="row row-cols-1 g-2 row-cols-lg-5 row-cols-md-3 p-4 brand"
+            >
+              <div class="col">
+                <picture>
+                  <img
+                    src="./assest/image/vendor-6.jpg"
+                    class="img-fluid"
+                    alt="brand_01.png"
+                  />
+                </picture>
+              </div>
+               <div class="col">
+                <picture>
+                  <img
+                    src="./assest/image/vendor-7.jpg"
+                    class="img-fluid"
+                    alt="brand_01.png"
+                  />
+                </picture>
+              </div>
+              <div class="col">
+                <picture>
+                  <img
+                    src="./assest/image/vendor-1.jpg"
+                    class="img-fluid"
+                    alt="brand_02.png"
+                  />
+                </picture>
+              </div>
+              <div class="col">
+                <picture>
+                  <img
+                    src="./assest/image/vendor-2.jpg"
+                    class="img-fluid"
+                    alt="brand_03.png"
+                  />
+                </picture>
+              </div>
+              <div class="col">
+                <picture>
+                  <img
+                    src="./assest/image/vendor-3.jpg"
+                    class="img-fluid"
+                    alt="brand_03.png"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End for Brand -->
+
+      </main>
+
+      <footer
+      class="text-center text-lg-start text-white pt-4 p-3"
+      style="background-color: #0a4275"
+     >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-light">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-light">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-light">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 link-light">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-light">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-light">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Shop
+              </h6>
+              <form>
+<!-- Name input -->
+<div class="form-outline mb-4">
+  <input type="text" id="form4Example1" class="form-control" />
+  <label class="form-label text-white" for="form4Example1">Name</label>
+</div>
+
+<!-- Email input -->
+<div class="form-outline mb-4">
+  <input type="email" id="form4Example2" class="form-control" />
+  <label class="form-label text-white" for="form4Example2">Email address</label>
+</div>
+
+<!-- Message input -->
+<div class="form-outline mb-4">
+  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+  <label class="form-label text-white" for="form4Example3">Message</label>
+</div>
+
+<!-- Checkbox -->
+
+
+<!-- Submit button -->
+<button type="submit" class="btn btn-outline-light text-white btn-block mb-4">Suscribe </button>
+</form>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Luxury</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Sport Wear</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Women's Shoes</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Popular Dresses</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Gym Accessories</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Sport Shoes</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Further info</h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">About Us</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Shop Location</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">FAQs</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contact</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> Nepal</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                ranjankharel@gmil.com
+              </p>
+              <p>
+                <i class="fas fa-phone me-3 text-secondary"></i> +977 52557 88
+              </p>
+              <p>
+                <i class="fas fa-print me-3 text-secondary"></i> +977 089426
+                567 89
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="#">Developers</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    </div>
+  </body>
+</html>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+></script>
